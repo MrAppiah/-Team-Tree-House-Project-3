@@ -18,8 +18,8 @@
 			<div class="container">
 				<h2>Signup for our newsletter</h2>
 				
-				<p>	Get the latest news on how your code is doing right in your inbox
-				</p>
+				<h3>Get the latest news on how your code is doing right in your inbox
+				</h3>	
 				
 				<div class="line-1"></div>
 				<div class="line-2"></div>
@@ -28,14 +28,14 @@
 		<main>
 			<div class="container">
 			<form>
-				<fieldset>
+				<fieldset class="contact-form">
 					<legend>Contact Information</legend>
 					<label for="name">Full Name</label>
 					<input
 						type="text"
 						id="name"
 						name="user-name"
-						placeholder="Required"
+						placeholder="Required" required
 					/>
 					<label for="email">Email Address</label>
 					<input
@@ -80,22 +80,23 @@
 						value="html-news"
 						name="user-news"
 					/><label for="html-news">HTML News</label>
-					
+					<br>
 					<input
 						type="checkbox"
 						id="css-news"
 						value="css-news"
 						name="user-news"
 					/><label for="css-news">CSS News</label>
-
+					<br>
 					<input
 						type="checkbox"
 						id="javascript-news"
 						value="javascript-news"
 						name="user-news"
 					/><label for="javascript-news">Javascript News</label>
+					<br>
 
-					<label>Newsletter format</label>
+					<p>Newsletter format</p>
 					
 					<input
 						type="radio"
@@ -103,14 +104,16 @@
 						value="html"
 						name="newsletter-format"
 					/><label for="html">HTML</label>
+					<br>
 					<input
 						type="radio"
 						id="plain-text"
 						value="plain-text"
 						name="newsletter-format"
 					/><label for="plain-text">Plain text</label>
-					
-					<label for="user-topics">Other topics you'd like to hear about</label>
+					<br>
+					<P>Other topics you'd like to hear about</P>
+					<label for="user-topics"></label>
 					<textarea id="topics" name="user-topics"></textarea>
 					<button type="submit">Sign Up</button>
 				</fieldset>

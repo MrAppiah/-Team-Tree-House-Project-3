@@ -12,6 +12,10 @@ body {
 	font-family: "Merriweather", sans-serif;
 }
 
+.container {
+	max-width: 500px;
+}
+
 .header-box {
 	color: #fff;
 	font-weight: 900;
@@ -23,7 +27,7 @@ body {
 
 p {
 	font-size: 15px;
-	text-align: center;
+	margin: 1rem auto;
 }
 
 .container {
@@ -36,9 +40,9 @@ h2 {
 	text-align: center;
 }
 
-p {
-	font-size: 14px;
-
+h3 {
+	text-align: center;
+	font-size: 0.8rem;
 	margin: 1.2rem auto;
 }
 
@@ -66,8 +70,8 @@ legend {
 }
 
 label {
-	display: block;
-	margin: 0.5rem auto;
+	display: inline-block;
+	margin: 0.4rem auto;
 	font-size: 0.8rem;
 }
 
@@ -78,10 +82,15 @@ textarea,
 select {
 	display: block;
 	width: 100%;
-	margin: 13px 0;
+	margin: 7px 0;
 	padding: 10px;
 	font-size: 13px;
 	font-family: "Merriweather", sans-serif;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 
 input[type="radio"],
@@ -103,12 +112,12 @@ fieldset {
 }
 
 button {
-	width: 90%;
+	width: 100%;
 	border-radius: 0.5em;
 	background: #39395a;
 	color: #fff;
 	padding: 10px 0;
-	font-size: 18px;
+	font-size: 28px;
 	border: none;
 	border-radius: 8px;
 	margin: 1.5rem auto 2.5rem;
@@ -125,5 +134,41 @@ footer {
 @media screen and (min-width: 768px) {
 	.container {
 		max-width: 600px;
+	}
+
+	.contact-form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		width: 70%;
+		margin-left: 160px;
+	}
+
+	input[type="radio"] {
+	}
+
+	#address4 {
+		width: 20%;
+	}
+
+	.line-3 {
+		margin: 2rem 0;
+	}
+
+	textarea {
+		margin: auto;
+	}
+
+	button {
+		width: 100%;
+	}
+
+	label {
+		margin-left: 10px;
 	}
 }
