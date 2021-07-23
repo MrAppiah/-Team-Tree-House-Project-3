@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -7,7 +8,7 @@
 		<title>Online Registration Form</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-			</link>
+			
 	</head>
 
 	<body>
@@ -27,8 +28,9 @@
 		</header>
 		<main>
 			<div class="container">
+			<div class="contact-form">
 			<form>
-				<fieldset class="contact-form">
+				<fieldset>
 					<legend>Contact Information</legend>
 					<div class="flex-pair">
 					<label for="name">Full Name</label>
@@ -38,23 +40,37 @@
 						name="user-name"
 						placeholder="Required" required
 					/>
-					
+				</div>
+			
+
+				<div class="flex-pair">
 					<label for="email">Email Address</label>
 					<input
 						type="email"
 						id="email"
 						name="user-email"
-						placeholder="Required"
+						placeholder="Required" required
 					/>
-					<label for="phone">Phone Number</label>
-					<input type="tel" id="phone" name="user-phone" />
-					<label for="address1">Street Address</label>
-					<input type="text" id="address1" name="user-address1" />
-					<label for="address2">City</label>
-					<input type="text" id="address2" name="user-address2" />
+				</div>
 
+				<div class="flex-pair">
+					<label for="phone">Phone Number</label>
+					<input type="tel" id="phone" name="user-phone" placeholder="Required" required/>
+				</div>
+
+				<div class="flex-pair">
+					<label for="address1">Street Address</label>
+					<input type="text" id="address1" name="user-address1" placeholder="Required" required />
+				</div>
+
+					<div class="flex-pair">
+					<label for="address2">City</label>
+					<input type="text" id="address2" name="user-address2" placeholder="Required" required />
+				</div>
+
+				<div class="flex-pair">
 					<label for="address3">State</label>
-					<select type="text" id="address3" name="user-address3">
+					<select id="address3" name="user-address3" >
 						<option value="Choose State" disabled selected>Choose State</option>
 						<option value="California">California</option>
 						<option value="Texas">Texas</option>
@@ -64,17 +80,19 @@
 						<option value="Arizona">Arizona</option>
 						<option value="New Mexico">New Mexico</option>
 					</select>
+				</div>
 
+				<div class="flex-pair">
 					<label for="address4">Zip Code</label>
-					<input type="text" id="address4" name="user-address4" />
+					<input class="z-code" type="text" id="address4" name="user-address4" placeholder="Required" required/>
 				</div>
 				</fieldset>
-
+			</div>
 				
 				<div class="line-3"></div>
 
 				<fieldset>
-					<legend>Newsletter</legend>
+					<legend class="newsletter-heading">Newsletter</legend>
 					<p>Select the newsletters you would like to receive</p>
 
 					<input
@@ -117,11 +135,12 @@
 					<br>
 					<P>Other topics you'd like to hear about</P>
 					<label for="user-topics"></label>
+					<input id="user-topics">
 					<textarea id="topics" name="user-topics"></textarea>
 					<button type="submit">Sign Up</button>
 				</fieldset>
+			</div>
 			</form>
-		</div>
 		</main>
 		<footer>Copyright The Code Review</footer>
 	</body>
