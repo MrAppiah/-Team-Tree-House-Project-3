@@ -109,7 +109,7 @@
 								<label for="address4">Zip Code</label>
 								<input
 									class="z-code"
-									type="number"
+									type="text"
 									id="address4"
 									name="user-address4"
 									placeholder="Required"
@@ -123,55 +123,57 @@
 
 					<fieldset>
 						<legend class="newsletter-heading">Newsletter</legend>
-						<p>Select the newsletters you would like to receive</p>
+						<div class="newsletter-form">
+							<p>Select the newsletters you would like to receive</p>
 
-						<input
-							type="checkbox"
-							id="html-news"
-							value="html-news"
-							name="user-news"
-						/><label for="html-news">HTML News</label>
-						<br />
-						<input
-							type="checkbox"
-							id="css-news"
-							value="css-news"
-							name="user-news"
-						/><label for="css-news">CSS News</label>
-						<br />
-						<input
-							type="checkbox"
-							id="javascript-news"
-							value="javascript-news"
-							name="user-news"
-						/><label for="javascript-news">Javascript News</label>
-						<br />
+							<input
+								type="checkbox"
+								id="html-news"
+								value="html-news"
+								name="user-news"
+							/><label for="html-news">HTML News</label>
+							<br />
+							<input
+								type="checkbox"
+								id="css-news"
+								value="css-news"
+								name="user-news"
+							/><label for="css-news">CSS News</label>
+							<br />
+							<input
+								type="checkbox"
+								id="javascript-news"
+								value="javascript-news"
+								name="user-news"
+							/><label for="javascript-news">Javascript News</label>
+							<br />
 
-						<p>Newsletter format</p>
+							<p>Newsletter format</p>
 
-						<input
-							type="radio"
-							id="html"
-							value="html"
-							name="newsletter-format"
-						/><label for="html">HTML</label>
-						<br />
-						<input
-							type="radio"
-							id="plain-text"
-							value="plain-text"
-							name="newsletter-format"
-						/><label for="plain-text">Plain text</label>
-						<br />
-						<p>Other topics you'd like to hear about</p>
-						<label for="topics"></label>
-						<textarea
-							placeholder="Required"
-							required
-							id="topics"
-							name="user-topics"
-						></textarea>
-						<button type="submit">Sign Up</button>
+							<input
+								type="radio"
+								id="html"
+								value="html"
+								name="newsletter-format"
+							/><label for="html">HTML</label>
+							<br />
+							<input
+								type="radio"
+								id="plain-text"
+								value="plain-text"
+								name="newsletter-format"
+							/><label for="plain-text">Plain text</label>
+							<br />
+
+							<label for="topics">Other topics you'd like to hear about</label>
+							<textarea
+								placeholder="Required"
+								required
+								id="topics"
+								name="user-topics"
+							></textarea>
+							<button type="submit">Sign Up</button>
+						</div>
 					</fieldset>
 				</form>
 			</div>

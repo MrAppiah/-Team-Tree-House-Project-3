@@ -15,7 +15,7 @@ body {
 .container {
 	max-width: 500px;
 	margin: auto;
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
 .header-box {
@@ -40,8 +40,8 @@ p {
 	margin: 1rem auto;
 }
 
-.contact-form {
-	background: cornsilk;
+.newsletter-form {
+	background-color: cornsilk;
 }
 
 h2 {
@@ -84,16 +84,21 @@ legend {
 	flex-direction: column;
 }
 
-label {
+label,
+label[for="topics"] {
 	display: inline-block;
-	margin: 0.6rem 0;
+	margin: 0.5rem 0;
 	font-size: 0.8rem;
+}
+
+label[for="topics"] {
+	margin-top: 1rem;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="number"],
+input[id="address4"],
 textarea,
 select {
 	display: block;
@@ -116,6 +121,10 @@ input[type="checkbox"] {
 	font-size: 10px;
 }
 
+.newsletter-form label {
+	margin-left: 0.5rem;
+}
+
 textarea {
 	height: 100px;
 }
@@ -124,8 +133,8 @@ fieldset {
 	border-style: none;
 }
 
-input[type="number"] {
-	width: 40%;
+input[id="address4"] {
+	width: 50%;
 }
 
 button {
@@ -182,8 +191,9 @@ footer {
 		flex-basis: 75%;
 	}
 
-	input[type="number"] {
+	input[id="address4"] {
 		flex-basis: 25%;
+		width: 25%;
 	}
 
 	label[for="name"],
@@ -194,14 +204,11 @@ footer {
 	label[for="address3"],
 	label[for="address4"] {
 		flex-basis: 25%;
+		align-self: center;
 	}
 
 	legend {
 		margin-left: 10px;
-	}
-
-	.newsletter-heading {
-		margin-left: 0;
 	}
 
 	.line-3 {
